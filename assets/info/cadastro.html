@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h2>Área de cadastro</h2>
+    <form action="Informações.html" method="post">
+        <section> <!--Informações básicas do usuário-->
+            <label>Nome</label>
+                <input type="text" name="nome" id="nome">
+        </section>
+        <section> 
+              <label>Sobrenome</label>
+                 <input type="text" name="sobrenome" id="sobrenome">
+        </section>
+        <section>
+             <label>Email</label>
+                    <input type="email" name="email" id="email">
+        </section>
+        <section>
+            <label>Data de nascimento</label>
+            <input type="date">
+        </section>
+           <section>
+               <label>Em qual área na programação você deseja atuar?</label></br>
+                    <input type="radio" name="programação" value="frontend"/>Front-end</br>
+                    <input type="radio" name="programação" value="backend"/>Back-end</br>
+                    <input type="radio" name="programação" value="fullstack"/>Full Stack</br>
+                    <input type="radio" name="programação" value="nao_sei"/>Não sei</br>
+                    <input type="submit" value="realizar cadastro">
+           </section>
+      
+    </form>
+</body>
+</html>
