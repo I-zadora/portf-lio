@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <main> <!--Área principal da pagina-->
+        <h1>Área de Cadastro</h1>
+        <p>Preencha com as suas informações</p>
+    </main>
+    <form action="informações.html" method="post">
+        <fieldset> <!--Área para inserção de dados pessoais do usuário-->
+            <legend>Dados pessoais</legend>
+                <section>
+                    <label for="name">Nome:</label>
+                    <input type="text" name="nome" id="name"/>
+                </section>
+                <section>
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="sobrenome"/>
+                </section>
+                <section>
+                     <label for="email">E-mail:</label>
+                     <input type="email" name="email" id="email"/>
+                <section>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" name="telefone" id="telefone"/>
+                </section>           
+                <section>
+                    <label for="data-de-nascimento">Data de nascimento</label>
+                    <input type="date" name="data-de-nascimento" id="data-de-nascimento"/>
+                </section>     
+                </section>
+                <section>
+                    <label>Gênero:</label>
+                    <select name="genero">
+                        <option></option>
+                        <option value="feminino">feminino</option>
+                        <option value="masculino">masculino</option>
+                        <option value="outros">outros</option>
+                        <option value="prefiro-nao-dizer">prefiro não dizer</option>
+                    </select>
+                </section>
+                <section>
+                    <label for="naturalidade">Naturalidade</label>
+                    <input type="text" name="naturalidade" id="naturalidade"/>
+                </section>
+             </fieldset>
+             <fieldset><!--dados adicionais-->
+                <legend>Endereço</legend>
+                    <section>
+                        <label for="rua">Rua:</label>
+                        <input type="text" name="rua" id="rua"/>
+                    </section>
+                    <section> 
+                        <label for="numero">Número:</label>
+                        <input type="text"  name="numero" id="numero"/>
+                    
+                        <label for="complemento">Complemento:</label>
+                        <input type="text" name="complemento" id="complemento"/>                  
+                    </section>
+                    <section>
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" name="bairro" id="bairro"/>
+                    </section>
+                    <section>
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" name="cidade" id="cidade"/>
+                    </section>
+                    <section>
+                        <label for="estado">Estado:</label>
+                        <input type="text" name="estado" id="estado">
+                    </section>
+             </fieldset></br>
+                    <section>
+                            <textarea name="comentario" rows="10" cols="60" id="comentario">Deixe alguma sugestão ou comentário sobre o cadastro.</textarea></br>
+                    </section>
+                    <section>
+                        <input type="checkbox" id="termos"/>
+                        <label for="termos">Eu declaro que li e aceito os termos de uso.</label>
+                    </section>
+                    <section> 
+                            <input type="reset" name="botao-limpar" value="limpar"/>
+                            <input type="submit" name="realizar cadastro" value="realizar cadastro"/>
+                    </section>               
+         </form>
+    
+    </body>
+</html>
